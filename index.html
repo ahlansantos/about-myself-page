@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Áhlan Santos</title>
+  <style>
+    /* Variáveis */
+    :root {
+      --primary: #00d8ff;
+      --bg: #111;
+      --bg-alt: #1a1a1a;
+      --text: #eee;
+      --text-muted: #ccc;
+      --accent: #00d8ff;
+    }
+
+    /* Reset de Margens e Padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      background-color: #222;
+      padding: 3rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    nav a {
+      color: var(--primary);
+      margin: 0 1.2rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .project {
+      background-color: var(--bg-alt);
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      background-color: #333;
+    }
+
+    .project h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      color: #fff;
+    }
+
+    .project p {
+      margin: 0.3rem 0;
+      color: var(--text-muted);
+    }
+
+    #about p, #contact p {
+      margin-bottom: 1rem;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #222;
+      color: #666;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      section {
+        padding: 2rem 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .project {
+        padding: 1.2rem;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Áhlan Santos</h1>
+    <p>Game Developer — Unreal Engine | Godot | Mobile</p>
+  </header>
+
+  <nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="project">
+      <h3>Sam's Sandbox <small>(Beta 0.1.1)</small></h3>
+      <p><strong>Type:</strong> Mobile Sandbox Game (Android)</p>
+      <p><strong>Features:</strong> Advanced Graphics, Gore System (Indev), Simple Maps</p>
+      <p><strong>Status:</strong> In active development</p>
+    </div>
+
+    <div class="project">
+      <h3>The Solitude Project</h3>
+      <p><strong>Type:</strong> Psychological Horror Game (PC)</p>
+      <p><strong>Features:</strong> Interactive narrative, volumetric lighting, 3D audio, immersive atmosphere</p>
+      <p><strong>Status:</strong> Being rebuilt from scratch</p>
+    </div>
+
+    <div class="project">
+      <h3>A Liminal Place</h3>
+      <p><strong>Type:</strong> Atmospheric Walking Simulator (PC)</p>
+      <p><strong>Features:</strong> Liminal design, symbolic visuals, interpretive storytelling</p>
+      <p><strong>Status:</strong> Finished project (source deleted)</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a 14-year-old developer with experience in Unreal Engine, Godot, and (a bit of) Roblox Studio. I focus on creating high-quality games for mobile and PC, especially with advanced graphics and interactive gameplay. I'm fluent in English, speak some Russian, and have a passion for optimization, visuals, and performance.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ahlansantos.gamedev@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/ahlansantos" target="_blank">github.com/ahlansantos</a></p>
+    <p>Itch.io: <a href="https://ahlansantos.itch.io" target="_blank">ahlansantos.itch.io</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Áhlan Santos. All rights reserved.</p>
+  </footer>
+</body>
+</html>

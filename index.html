@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Áhlan Santos</title>
   <style>
-    /* Variáveis */
     :root {
       --primary: #00d8ff;
       --bg: #111;
@@ -15,7 +14,7 @@
       --accent: #00d8ff;
     }
 
-    /* Reset de Margens e Padding */
+    
     * {
       margin: 0;
       padding: 0;
@@ -110,6 +109,20 @@
       color: var(--text-muted);
     }
 
+    .project a {
+      display: block;
+      color: var(--primary);
+      margin-top: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      text-align: center;
+      transition: color 0.2s ease;
+    }
+
+    .project a:hover {
+      color: #fff;
+    }
+
     #about p, #contact p {
       margin-bottom: 1rem;
       color: var(--text-muted);
@@ -194,6 +207,7 @@
       <p><strong>Type:</strong> Mobile Sandbox Game (Android)</p>
       <p><strong>Features:</strong> Advanced Graphics, Gore System (Indev), Simple Maps</p>
       <p><strong>Status:</strong> In active development</p>
+      <a href="https://ahlansantos.itch.io/sams-sandbox-beta" target="_blank">Play on Itch.io</a>
     </div>
 
     <div class="project">
@@ -201,6 +215,7 @@
       <p><strong>Type:</strong> Psychological Horror Game (PC)</p>
       <p><strong>Features:</strong> Interactive narrative, volumetric lighting, 3D audio, immersive atmosphere</p>
       <p><strong>Status:</strong> Being rebuilt from scratch</p>
+      <a href="https://store.steampowered.com/app/3452280/The_Solitude_Project/" target="_blank">View on Steam</a>
     </div>
 
     <div class="project">
@@ -208,6 +223,7 @@
       <p><strong>Type:</strong> Atmospheric Walking Simulator (PC)</p>
       <p><strong>Features:</strong> Liminal design, symbolic visuals, interpretive storytelling</p>
       <p><strong>Status:</strong> Finished project (source deleted)</p>
+      <a href="https://store.steampowered.com/app/2730180/A_Liminal_Place_Remastered/" target="_blank">View on Steam</a>
     </div>
   </section>
 
